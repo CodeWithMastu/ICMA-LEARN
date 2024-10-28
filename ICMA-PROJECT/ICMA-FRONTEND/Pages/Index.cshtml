@@ -1,0 +1,41 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Course List";
+}
+<h2>Course List</h2>
+<hr />
+<div style="display: flex; gap: 10px;">
+    <form asp-page="./CreateCourse" method="get">
+        <button type="submit" class="btn btn-primary">Single Course</button>
+    </form>
+    <form asp-page="./UploadCourse" method="get">
+        <button type="submit" class="btn btn-danger">Bulk Course</button>
+    </form>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Course Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Date Registered</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.CourseList)
+        {
+            <tr>
+                <td>@item.course_id</td>
+                <td>@item.Title</td>
+                <td>@item.Description</td>
+                <td>@item.registration_date</td>
+                <td>
+                    @* <a asp-page="./CourseDetails" asp-route-id="@item.course_id">Details</a> | *@
+                    @* <a asp-page="./EditCourse" asp-route-id="@item.course_id">Edit</a> *@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,50 @@
+﻿@page
+@model ICMA_LEARNFRONTEND.Pages.UploadCourseModel
+@{
+}
+
+@{
+    ViewData["Title"] = "Bulk Course Upload";
+}
+<h4>Upload Courses</h4>
+<hr />
+<h2>@ViewData["Title"]</h2>
+
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label for="ExcelFile">Choose an Excel file</label>
+        <input type="file" asp-for="ExcelFile" />
+    </div>
+    <button class="btn btn-primary" type="submit">Upload</button>
+</form>
+
+@if (Model.ExcelDataList.Any())
+{
+    <h3>Data for Upload</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.ExcelDataList)
+            {
+                <tr>
+                    <td>@item.Title</td>
+                    <td>@item.Description</td>
+                    <td>@item.Category</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+

@@ -1,0 +1,45 @@
+﻿@page
+@model ICMA_LEARNFRONTEND.Pages.ListofUsersModel
+@{
+}
+
+@{
+    ViewData["Title"] = "List of TopScorer";
+}
+<h2>LeaderBoard</h2>
+<hr />
+<table class="table">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Course</th>
+            <th>Category</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.TopscorerList)
+        {
+            <tr>
+                <td>@item.FullName</td>
+                <td>@item.Course</td>
+                <td>@item.Category</td>
+                <td>@item.Score</td>
+
+@*                 <td>
+                    <a asp-page="./CourseDetails" asp-route-id="@item.course_id">Details</a> |
+                    <a asp-page="./EditCourse" asp-route-id="@item.course_id">Edit</a>
+                </td> *@
+            </tr>
+        }
+    </tbody>
+</table>
+
+<br />
+<a asp-page="Index">Back to Course List</a></div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,58 @@
+﻿@* @page
+@model ICMA_LEARNFRONTEND.Pages.EditCourseModel
+@{
+}
+
+@{
+    ViewData["Title"] = "Edit Courses";
+}
+<h2>Edit Courses</h2>
+<hr />
+@{
+    ViewData["Title"] = "Edit Course";
+}
+<h4>Create Course</h4>
+<hr /> 
+<div class="row">
+
+    <div class="col-md-4">
+        <form method="post">
+            @if (!string.IsNullOrEmpty(Model.Message))
+            {
+                <p class="alert alert-success">@Model.Message</p>
+            }
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="course.Title" class="control-label"></label>
+                <input asp-for="course.Title" class="form-control" />
+                <span asp-validation-for="course.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="course.Description" class="control-label"></label>
+                <input asp-for="course.Description" class="form-control" />
+                <span asp-validation-for="course.Description" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="course.category" class="control-label"></label>
+                <input asp-for="course.category" class="form-control" />
+                <span asp-validation-for="course.category" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <br />
+                <button type="submit" class="btn btn-primary">Save course</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <br />
+    <a asp-page="Index">Back to Course List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+ *@
