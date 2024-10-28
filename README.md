@@ -32,5 +32,12 @@ The **ICMA-Project** is a web application designed to facilitate course manageme
 3. Press **F5** or select **Start Debugging** to launch both projects simultaneously.
 
 ## Usage
-The application uses the sample data provided in `CourseUpload.xlsx` to demonstrate course upload functionality. 
+The application uses the sample data provided in `CourseUpload.xlsx` to demonstrate course upload functionality for the Bulk Course Upload. 
+
+## Demo
+
+Here’s a quick demo of the project functionality for the single course creation:
+
+
+![Singleupload - Made with Clipchamp](https://github.com/user-attachments/assets/652671da-53fb-45ed-84bb-ebb5965e9ff0)
 
