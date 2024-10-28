@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICMA-LEARNFRONTEND", "ICMA-LEARNFRONTEND\ICMA-LEARNFRONTEND.csproj", "{0D405A68-C4F3-4455-8D6A-D09DF8C2C9DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICMA_LEARN", "..\..\ICMA_LEARN\ICMA_LEARN\ICMA_LEARN.csproj", "{9F427F23-6724-4866-8DCF-3868E95A8FAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D405A68-C4F3-4455-8D6A-D09DF8C2C9DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D405A68-C4F3-4455-8D6A-D09DF8C2C9DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D405A68-C4F3-4455-8D6A-D09DF8C2C9DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D405A68-C4F3-4455-8D6A-D09DF8C2C9DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F427F23-6724-4866-8DCF-3868E95A8FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F427F23-6724-4866-8DCF-3868E95A8FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F427F23-6724-4866-8DCF-3868E95A8FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F427F23-6724-4866-8DCF-3868E95A8FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C21AAC4D-FFCB-4BBF-A49E-2D8246664088}
+	EndGlobalSection
+EndGlobal
