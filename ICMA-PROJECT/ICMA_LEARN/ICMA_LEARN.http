@@ -1,0 +1,6 @@
+@ICMA_LEARN_HostAddress = http://localhost:5012
+
+GET {{ICMA_LEARN_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
